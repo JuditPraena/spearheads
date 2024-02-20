@@ -122,12 +122,10 @@ barras_horizontales_remache <- barplot(table(spear$Remache),
 #Ahora lo que hay que hacer es seleccionar los datos que se quieren agrupar: $
 #Empleamos la función de gráficos de barras: barplot
 #Incluimos leyenda con los valores otorgados a las categorías. 
-barras_material_conservacion <- barplot(table(spear$Conservacion, 
+barras_material_conservacion <- barplot.default(table(spear$Conservacion, 
                                               spear$Materiales), beside = TRUE, 
                                         legend = TRUE, main = "Conservacion por Material", 
-                                        xlab = "Conservacion", col = c("purple", "blue"), 
-                                        names.arg = c("Excelente", "Bueno", "Regular", "Malo"))
-
+                                        xlab = "Conservacion", col = c("purple", "blue", "pink", "orange"))
 
 #Ejercicio 11 gráfico_sectores_variable_Conservación
 #Para ello, se utiliza la función pie. 
